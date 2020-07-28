@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Courier Prime', monospace, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(243, 241, 241);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  height: 100vh;
+  line-height: 150%;
+  font-size: 20px;
+}
+
+.Content {
+  width: 65%;
+  // background-color: white;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.Data-div, .Project-div, .Contact-div {
+  margin-bottom: 40px;
+}
+
+.Project-ul {
+  padding-left: 20px;
+  li {
+    list-style: outside;
+  }
+}
+
+.Contact-ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.Footer {
+  margin: 0 auto;
+  text-align: center;
+  color: #df0000;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// BREAKPOINTS
+@media only screen and (min-width: 0px) and (max-width: 540px){
+  .Content {
+    width: 75%;
+  }
+}
