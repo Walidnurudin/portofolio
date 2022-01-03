@@ -63,11 +63,33 @@ a {
 .project-section {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 50px;
+  grid-gap: 50px;
 }
 
 .project-wrap {
   width: 400px;
+  padding: 20px;
+}
+
+.project-wrap:hover {
+  position: relative;
+  background-color: gainsboro;
+  transform: translateY(-30px);
+  transition: 0.3s;
+  border-radius: 10px;
+  .btn-project {
+    background-color: rgb(243, 241, 241);
+  }
+}
+
+.btn-project {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 // BREAKPOINTS
@@ -82,5 +104,19 @@ a {
 
   .project-wrap {
     width: 350px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+  .Content {
+    width: 80%;
+  }
+
+  .project-section {
+    grid-template-columns: auto auto;
+  }
+
+  .project-wrap {
+    width: 250px;
   }
 }

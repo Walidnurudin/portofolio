@@ -21,6 +21,18 @@ import {
   loginZwallet,
   profileZwallet,
   transferZwallet,
+
+  // coffee-brings
+  loginCoffee,
+  landingCoffee,
+  productCoffee,
+  paymentCoffee,
+
+  // clover-hire
+  loginClover,
+  landingClover,
+  emailClover,
+  recruiterClover,
 } from "../assets/images";
 
 const data = [
@@ -114,20 +126,20 @@ const data = [
     github: "https://github.com/LepakBoy/frontend-coffebrings",
     image: [
       {
+        title: "landing page",
+        image: landingCoffee,
+      },
+      {
         title: "login page",
-        image: loginTickitz,
+        image: loginCoffee,
       },
       {
-        title: "home page",
-        image: homeTickitz,
+        title: "product page",
+        image: productCoffee,
       },
       {
-        title: "movie detail page",
-        image: movieDetailTickitz,
-      },
-      {
-        title: "order page",
-        image: orderTickitz,
+        title: "payment page",
+        image: paymentCoffee,
       },
     ],
   },
@@ -140,20 +152,20 @@ const data = [
     github: "https://github.com/AhmadZaky19/clover-frontend",
     image: [
       {
+        title: "landing page",
+        image: landingClover,
+      },
+      {
         title: "login page",
-        image: loginTickitz,
+        image: loginClover,
       },
       {
-        title: "home page",
-        image: homeTickitz,
+        title: "recruiter page",
+        image: recruiterClover,
       },
       {
-        title: "movie detail page",
-        image: movieDetailTickitz,
-      },
-      {
-        title: "order page",
-        image: orderTickitz,
+        title: "email page",
+        image: emailClover,
       },
     ],
   },

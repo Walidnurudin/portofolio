@@ -47,12 +47,7 @@ export default function Data({ name, image, desc, publish, github }) {
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <div
           onClick={() => window.open(publish, "_blank", "noopener noreferrer")}
-          style={{
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-          }}
+          className="btn-project"
         >
           <FaGithub />
           <span>Publish</span>
@@ -60,12 +55,7 @@ export default function Data({ name, image, desc, publish, github }) {
 
         <div
           onClick={() => window.open(github, "_blank", "noopener noreferrer")}
-          style={{
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-          }}
+          className="btn-project"
         >
           <FaGlobe />
           <span>Repository</span>
