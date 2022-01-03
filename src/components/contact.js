@@ -6,11 +6,16 @@ import { AiFillLinkedin } from "react-icons/ai";
 export default function Contact() {
   return (
     <div className="Contact-div">
-      <h2>contact :</h2>
+      <h2>kontak :</h2>
       <ul className="Contact-ul">
-        <li>
+        {/* <li>
           <a href="https://t.me/WalidNurudin">
             <FaTelegram /> telegram
+          </a>
+        </li> */}
+        <li>
+          <a href="https://linkedin.com/in/walidnurudin">
+            <AiFillLinkedin /> linkedin
           </a>
         </li>
         <li>
@@ -18,11 +23,7 @@ export default function Contact() {
             <FaGithub /> github
           </a>
         </li>
-        <li>
-          <a href="https://linkedin.com/in/walidnurudin">
-            <AiFillLinkedin /> linkedin
-          </a>
-        </li>
+
         <li>
           <a href="mailto:walidnurudin47@gmail.com">
             <MdEmail /> email

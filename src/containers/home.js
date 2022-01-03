@@ -175,6 +175,7 @@ export default function Home() {
   return (
     <div>
       <Data />
+      <h2>portofolio : </h2>
       <div className="project-section">
         {data.map((item, index) => (
           <div className="project-wrap" key={index}>

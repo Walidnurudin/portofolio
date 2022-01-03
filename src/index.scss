@@ -28,6 +28,7 @@ code {
 }
 
 .Data-div,
+.project-section,
 .Contact-div {
   margin-bottom: 40px;
 }
@@ -44,6 +45,7 @@ code {
   text-align: center;
   color: #df0000;
   font-size: 30px;
+  padding-bottom: 50px;
 }
 
 h2 {
@@ -69,14 +71,15 @@ a {
 .project-wrap {
   width: 400px;
   padding: 20px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
 }
 
 .project-wrap:hover {
   position: relative;
   background-color: gainsboro;
-  transform: translateY(-30px);
+  transform: translateY(-20px);
   transition: 0.3s;
-  border-radius: 10px;
   .btn-project {
     background-color: rgb(243, 241, 241);
   }
