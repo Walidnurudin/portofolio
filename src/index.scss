@@ -4,13 +4,13 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Courier Prime', monospace, sans-serif;
+  font-family: "Courier Prime", monospace, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -27,15 +27,9 @@ code {
   padding-top: 10px;
 }
 
-.Data-div, .Project-div, .Contact-div {
+.Data-div,
+.Contact-div {
   margin-bottom: 40px;
-}
-
-.Project-ul {
-  padding-left: 20px;
-  li {
-    list-style: outside;
-  }
 }
 
 .Contact-ul {
@@ -58,7 +52,7 @@ h2 {
 }
 
 a {
-  text-decoration: none;
+  // text-decoration: none;
   color: inherit;
   &:hover {
     text-decoration: underline;
@@ -66,7 +60,7 @@ a {
 }
 
 // BREAKPOINTS
-@media only screen and (min-width: 0px) and (max-width: 540px){
+@media only screen and (min-width: 0px) and (max-width: 540px) {
   .Content {
     width: 75%;
   }
