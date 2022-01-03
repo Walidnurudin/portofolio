@@ -2,12 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import {
-  homeTickitz,
-  loginTickitz,
-  movieDetailTickitz,
-  orderTickitz,
-} from "../assets/images";
 
 const responsive = {
   superLargeDesktop: {
@@ -29,29 +23,10 @@ const responsive = {
   },
 };
 
-const image = [
-  {
-    title: "login page",
-    image: loginTickitz,
-  },
-  {
-    title: "home page",
-    image: homeTickitz,
-  },
-  {
-    title: "movie detail page",
-    image: movieDetailTickitz,
-  },
-  {
-    title: "order page",
-    image: orderTickitz,
-  },
-];
-
-export default function Data() {
+export default function Data({ name, image, desc, publish, github }) {
   return (
     <div>
-      <h2>Zwallet</h2>
+      <h2>{name}</h2>
 
       <Carousel responsive={responsive}>
         {image.map((item, index) => (
@@ -61,25 +36,39 @@ export default function Data() {
             alt={item.title}
             key={index}
             width="100%"
+            height="200"
+            style={{ objectFit: "contain" }}
           />
         ))}
       </Carousel>
 
-      <p>
-        Zwallet adalah aplikasi transaksi yang bisa kamu pakai untuk melakukan
-        top up dan transfer ke sesama pengguna aplikasi zwallet. Zwallet
-        dibangun menggunakan NextJS.
-      </p>
+      <p>{desc}</p>
 
       <div style={{ display: "flex", justifyContent: "space-around" }}>
-        <div>
+        <div
+          onClick={() => window.open(publish, "_blank", "noopener noreferrer")}
+          style={{
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+          }}
+        >
           <FaGithub />
-          <span>https://zwallet-x.vercel.app/</span>
+          <span>Publish</span>
         </div>
 
-        <div>
+        <div
+          onClick={() => window.open(github, "_blank", "noopener noreferrer")}
+          style={{
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+          }}
+        >
           <FaGlobe />
-          <span>https://github.com/Walidnurudin/zwallet</span>
+          <span>Repository</span>
         </div>
       </div>
 

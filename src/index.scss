@@ -59,9 +59,28 @@ a {
   }
 }
 
+// PROJECT
+.project-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+}
+
+.project-wrap {
+  width: 400px;
+}
+
 // BREAKPOINTS
 @media only screen and (min-width: 0px) and (max-width: 540px) {
   .Content {
     width: 75%;
+  }
+
+  .project-section {
+    grid-template-columns: auto;
+  }
+
+  .project-wrap {
+    width: 350px;
   }
 }
