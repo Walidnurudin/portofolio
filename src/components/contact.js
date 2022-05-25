@@ -5,28 +5,38 @@ import { MdEmail } from 'react-icons/md';
 
 function Contact() {
   return (
-    <div>
-      <h2>contact :</h2>
+    <div className='py-10'>
+      <h2 className='mb-5'>contact :</h2>
       <ul>
         <li>
-          <a href='https://linkedin.com/in/walidnurudin'>
+          <a
+            className='flex gap-3 items-center mb-2'
+            href='https://linkedin.com/in/walidnurudin'
+          >
             <AiFillLinkedin /> linkedin
           </a>
         </li>
         <li>
-          <a href='https://github.com/Walidnurudin'>
+          <a
+            className='flex gap-3 items-center mb-2'
+            href='https://github.com/Walidnurudin'
+          >
             <FaGithub /> github
           </a>
         </li>
 
         <li>
-          <a href='mailto:walidnurudin47@gmail.com'>
+          <a
+            className='flex gap-3 items-center mb-2'
+            href='mailto:walidnurudin47@gmail.com'
+          >
             <MdEmail /> email
           </a>
         </li>
       </ul>
-      <div>
-        <FaHeart />
+
+      <div className='flex justify-center'>
+        <FaHeart color='maroon' size={30} />
       </div>
     </div>
   );
