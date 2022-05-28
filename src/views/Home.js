@@ -175,7 +175,7 @@ function Home() {
       <div className='container mx-auto px-5 sm:px-0'>
         <Hero />
         <h2 className='mb-5'>portofolio : </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-10 md:gap-x-20'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-10 md:gap-x-20'>
           {DataPortfolio.map((item, index) => (
             <div key={index}>
               <Portfolio

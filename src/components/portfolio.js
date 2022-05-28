@@ -40,7 +40,7 @@ function portfolio({ name, image, desc, publish, github }) {
 
       <p className='my-5'>{desc}</p>
 
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <div className='flex flex-col lg:flex-row justify-around'>
         <div
           onClick={() => window.open(publish, '_blank', 'noopener noreferrer')}
           className='flex items-center cursor-pointer gap-3 bg-blue-50 rounded-xl p-5'
