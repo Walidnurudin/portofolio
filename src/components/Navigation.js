@@ -19,11 +19,13 @@ const nav = [
 const Navigation = () => {
   return (
     <div>
-      <ul className="flex">
+      <ul className="flex my-10 space-x-5">
         {nav.map((d, i) => (
           <React.Fragment key={i}>
             <li>
-              <Link href={d.route}>{d.label}</Link>
+              <Link className="mr-3" href={d.route}>
+                {d.label}
+              </Link>
             </li>{' '}
             {nav.length - 1 !== i && '/'}
           </React.Fragment>
