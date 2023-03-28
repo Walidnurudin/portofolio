@@ -20,7 +20,7 @@ const Experience = () => {
     <div>
       <h1>Experience</h1>
 
-      <div>
+      <div className="dark:text-green-300">
         {exp.map((d, i) => (
           <div key={i}>
             <h3>{d.role}</h3>

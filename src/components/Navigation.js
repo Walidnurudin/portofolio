@@ -13,23 +13,40 @@ const nav = [
   {
     label: 'Talks',
     route: 'talks'
+  },
+  {
+    label: 'Resume',
+    route: 'resume'
   }
 ];
 
 const Navigation = () => {
   return (
     <div>
-      <ul className="flex my-10 space-x-5">
-        {nav.map((d, i) => (
-          <React.Fragment key={i}>
-            <li>
-              <Link className="mr-3" href={d.route}>
+      <ul className="flex my-10 space-x-2">
+        {nav.map((d, i) =>
+          d.route === 'resume' ? (
+            <li key={i}>
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/17BCASX3jI5RYsQ9uEzQLC-u4SF2cC1-Q/view?usp=sharing"
+                rel="noopener noreferrer"
+                className="text-sky-600 dark:text-white"
+              >
                 {d.label}
-              </Link>
-            </li>{' '}
-            {nav.length - 1 !== i && '/'}
-          </React.Fragment>
-        ))}
+              </a>
+            </li>
+          ) : (
+            <React.Fragment key={i}>
+              <li>
+                <Link className="text-sky-600 dark:text-white" href={d.route}>
+                  {d.label}
+                </Link>
+              </li>{' '}
+              {nav.length - 1 !== i && <span>/</span>}
+            </React.Fragment>
+          )
+        )}
       </ul>
     </div>
   );

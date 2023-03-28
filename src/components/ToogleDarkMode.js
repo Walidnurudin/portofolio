@@ -7,22 +7,19 @@ import toggleOff from '/public/icons/toggle-off.svg';
 
 const ToogleDarkMode = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
   const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  const handleSwitchToggle = () =>
+    setTheme(theme === 'light' ? 'dark' : 'light');
 
   return (
     <div>
       <Image
-        src={currentTheme === 'light' ? toggleOn : toggleOff}
+        src={currentTheme === 'dark' ? toggleOff : toggleOn}
         alt="icon"
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        onClick={handleSwitchToggle}
         width={50}
+        className="cursor-pointer"
       />
     </div>
   );

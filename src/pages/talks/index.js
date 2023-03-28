@@ -24,7 +24,7 @@ const Talks = () => {
     <div>
       <p>Talks</p>
 
-      <div>
+      <div className="dark:text-green-300">
         {data.map((d, i) => (
           <Fragment key={i}>
             {d.label === 'Email' ? (
