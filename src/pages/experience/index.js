@@ -3,32 +3,30 @@ import React from 'react';
 const exp = [
   {
     role: 'Frontend Developer',
-    company: 'Lyrid prima',
-    date: 'Jan 2020 - Jan 2020',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi error ipsum magnam fugiat tenetur similique eum eius dolorum quasi nostrum? Consequuntur cumque temporibus repellat quae quia cupiditate iste incidunt, nobis, omnis asperiores repellendus, sunt id laudantium nisi nostrum odio aut? Quos laborum, suscipit qui illo repellendus facere delectus similique quam ad minus alias atque necessitatibus illum'
+    company: 'PT. Lyrid Prima Indonesia',
+    date: 'Jan 2022 - Sekarang',
+    desc: 'Melakukan integrasi REST API, slicing UI Design ke web page dan memastikan berfungsi dengan baik.'
   },
   {
-    role: 'Frontend Developer',
-    company: 'Lyrid prima',
-    date: 'Jan 2020 - Jan 2020',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi error ipsum magnam fugiat tenetur similique eum eius dolorum quasi nostrum? Consequuntur cumque temporibus repellat quae quia cupiditate iste incidunt, nobis, omnis asperiores repellendus, sunt id laudantium nisi nostrum odio aut? Quos laborum, suscipit qui illo repellendus facere delectus similique quam ad minus alias atque necessitatibus illum'
+    role: 'Security Guard',
+    company: 'PT. AGUNG RAHARDJA MANUNGGAL YUDHA',
+    date: 'Nov 2018 - Sep 2019',
+    desc: 'Melakukan pemeriksaan pada tamu / pemilik yang akan masuk ke area kerja, Menahan KTP/ SIM setiap tamu yang akan memasuki area kerja, Menjaga dan memelihara asset dan inventaris gedung. Bertanggung jawab untuk menjaga keamanan area kerja sesuai SOP yang telah ditentukan agar terciptanya area kerja yang aman dan kondusif.'
   }
 ];
 
 const Experience = () => {
   return (
     <div>
-      <h1>Experience</h1>
-
       <div className="dark:text-green-300">
         {exp.map((d, i) => (
-          <div key={i}>
-            <h3>{d.role}</h3>
-            <h5>
-              {d.company} {d.date}
-            </h5>
+          <div key={i} className="mb-8">
+            <h3 className="text-xl">{d.role}</h3>
+            <p className="text-sm text-gray-600 dark:text-white">
+              {d.company} ({d.date})
+            </p>
 
-            <p>{d.desc}</p>
+            <p className="mt-2 p-2">{d.desc}</p>
           </div>
         ))}
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const nav = [
   {
@@ -8,24 +9,30 @@ const nav = [
   },
   {
     label: 'Experience',
-    route: 'experience'
+    route: '/experience'
   },
   {
     label: 'Talks',
-    route: 'talks'
+    route: '/talks'
+  },
+  {
+    label: 'Message',
+    route: '/message'
   },
   {
     label: 'Resume',
-    route: 'resume'
+    route: '/resume'
   }
 ];
 
 const Navigation = () => {
+  const router = useRouter();
+
   return (
     <div>
       <ul className="flex my-10 space-x-2">
         {nav.map((d, i) =>
-          d.route === 'resume' ? (
+          d.route === '/resume' ? (
             <li key={i}>
               <a
                 target="_blank"
@@ -39,7 +46,14 @@ const Navigation = () => {
           ) : (
             <React.Fragment key={i}>
               <li>
-                <Link className="text-sky-600 dark:text-white" href={d.route}>
+                <Link
+                  className={`${
+                    router.pathname === d.route
+                      ? 'bg-sky-600 text-white dark:text-black dark:bg-white'
+                      : 'text-sky-600 dark:text-white'
+                  }`}
+                  href={d.route}
+                >
                   {d.label}
                 </Link>
               </li>{' '}
