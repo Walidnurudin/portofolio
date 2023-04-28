@@ -12,8 +12,8 @@ const font = Inconsolata({
 
 const Main = ({ children }) => {
   return (
-    <div className={`bg-zinc-50 dark:bg-black h-screen w-screen`}>
-      <div className="container max-w-6xl w-full mx-auto p-3">
+    <div className={`bg-zinc-50 dark:bg-black `}>
+      <div className="w-screen h-screen max-w-6xl mx-auto p-3">
         <Head />
         <Navigation />
         <main>{children}</main>

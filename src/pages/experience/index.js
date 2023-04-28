@@ -8,6 +8,24 @@ const exp = [
     desc: 'Melakukan integrasi REST API, slicing UI Design ke web page dan memastikan berfungsi dengan baik.'
   },
   {
+    role: 'Fullstack Developer',
+    company: 'Arkademy Tech Academy',
+    date: 'Sep 2021 - jan 2022',
+    desc: 'Belajar React JS, Express JS & React Native. Dan membuat beberapa proyek.'
+  },
+  {
+    role: 'Frontend Developer',
+    company: 'Praxis Academy',
+    date: 'Agu 2020 - Des 2020',
+    desc: 'Belajar membuat aplikasi web selama 3 bulan menggunakan Vue JS, dan membuat proyek kecil.'
+  },
+  {
+    role: 'Frontend Developer',
+    company: 'Pondok Programmer',
+    date: 'Jan 2020 - Apr 2020',
+    desc: 'Belajar membuat aplikasi web selama 3 bulan menggunakan React JS, dan membuat proyek kecil.'
+  },
+  {
     role: 'Security Guard',
     company: 'PT. AGUNG RAHARDJA MANUNGGAL YUDHA',
     date: 'Nov 2018 - Sep 2019',
