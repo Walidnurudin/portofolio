@@ -28,7 +28,7 @@ const Message = () => {
   });
 
   const onSubmit = async (data) => {
-    let result = null;
+    let result;
 
     try {
       setLoading(true);
@@ -64,15 +64,14 @@ const Message = () => {
         progress: undefined,
         theme: currentTheme === 'dark' ? 'dark' : 'light'
       });
+
+      console.log(e);
     }
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label
-        for="email"
-        class="block mb-2 text-xs font-medium dark:text-white text-black"
-      >
+      <label className="block mb-2 text-xs font-medium dark:text-white text-black">
         Full Name
       </label>
       <input
@@ -84,10 +83,7 @@ const Message = () => {
         <p className="text-red-500 m-0 text-xs">{errors.name.message}</p>
       )}
 
-      <label
-        for="email"
-        class="block mb-2 text-xs font-medium dark:text-white text-black mt-5"
-      >
+      <label className="block mb-2 text-xs font-medium dark:text-white text-black mt-5">
         Email
       </label>
       <input
@@ -100,10 +96,7 @@ const Message = () => {
         <p className="text-red-500 m-0 text-xs">{errors.email.message}</p>
       )}
 
-      <label
-        for="email"
-        class="block mb-2 text-xs font-medium dark:text-white text-black mt-5"
-      >
+      <label className="block mb-2 text-xs font-medium dark:text-white text-black mt-5">
         Message
       </label>
       <textarea
