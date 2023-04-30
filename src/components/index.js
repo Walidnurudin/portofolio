@@ -1,5 +1,6 @@
-import Contact from './contact';
-import Portfolio from './portfolio';
-import Hero from './hero';
+import Navigation from './Navigation';
+import Head from './Head';
+import Footer from './Footer';
+import ToogleDarkMode from './ToogleDarkMode';
 
-export { Contact, Portfolio, Hero };
+export { Navigation, Head, Footer, ToogleDarkMode };
