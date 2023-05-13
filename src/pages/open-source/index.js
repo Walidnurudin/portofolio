@@ -1,5 +1,38 @@
 import React from 'react';
 
+import {
+  // tickitz
+  homeTickitz,
+  loginTickitz,
+  movieDetailTickitz,
+  orderTickitz,
+
+  // tickitz (mobile)
+  loginTickitzMobile,
+  homeTickitzMobile,
+  movieDetailTickitzMobile,
+  orderTickitzMobile,
+
+  // zwallet
+  dashboardZwallet,
+  landingZwallet,
+  loginZwallet,
+  profileZwallet,
+  transferZwallet,
+
+  // coffee-brings
+  loginCoffee,
+  landingCoffee,
+  productCoffee,
+  paymentCoffee,
+
+  // clover-hire
+  loginClover,
+  landingClover,
+  emailClover,
+  recruiterClover
+} from '../assets/images';
+
 const data = [
   //   [1]
   {
