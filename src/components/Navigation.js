@@ -12,6 +12,10 @@ const nav = [
     route: '/experience'
   },
   {
+    label: 'Open Source',
+    route: '/open-source'
+  },
+  {
     label: 'Talks',
     route: '/talks'
   },
@@ -36,7 +40,7 @@ const Navigation = () => {
             <li key={i}>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/17BCASX3jI5RYsQ9uEzQLC-u4SF2cC1-Q/view?usp=sharing"
+                href="https://drive.google.com/file/d/1qA47R74Augf3yg7yFeSmvstVQL-SZBdT/view?usp=sharing"
                 rel="noopener noreferrer"
                 className="text-sky-600 dark:text-white"
               >
