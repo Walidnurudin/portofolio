@@ -31,7 +31,7 @@ import {
   landingClover,
   emailClover,
   recruiterClover
-} from '../assets/images';
+} from '/src/assets/images';
 
 const data = [
   //   [1]
