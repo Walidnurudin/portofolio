@@ -38,13 +38,14 @@ const Experience = () => {
     <div>
       <div className="dark:text-green-300">
         {exp.map((d, i) => (
-          <div key={i} className="mb-8">
+          <div key={i} className="mb-6">
             <h3 className="text-xl">{d.role}</h3>
             <p className="text-sm text-gray-600 dark:text-white">
               {d.company} ({d.date})
             </p>
 
             <p className="mt-2 p-2">{d.desc}</p>
+            {exp.length - 1 !== i && <div className="border-b-4 pb-3"></div>}
           </div>
         ))}
       </div>
