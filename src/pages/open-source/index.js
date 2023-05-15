@@ -173,8 +173,6 @@ const data = [
 const OpenSource = () => {
   return (
     <div>
-      <p>Open Source</p>
-
       <div className="flex w-full">
         <div className="flex flex-row flex-wrap">
           {data.map((item, idx) => (
@@ -187,10 +185,12 @@ const OpenSource = () => {
                 alt="Picture"
               />
               <div className="p-4 sm:p-6">
-                <p className="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+                <p className="font-bold dark:text-gray-50 text-gray-700 text-[22px] leading-7 mb-1">
                   {item.name}
                 </p>
-                <p className="text-[#7C7C80] font-[15px] mt-6">{item.desc}</p>
+                <p className="text-[#7C7C80] dark:text-green-300 font-[15px] mt-6">
+                  {item.desc}
+                </p>
 
                 <a
                   target="_blank"
