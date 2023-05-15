@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import {
   // tickitz
@@ -173,6 +174,43 @@ const OpenSource = () => {
   return (
     <div>
       <p>Open Source</p>
+
+      <div className="flex w-full">
+        <div className="flex flex-row flex-wrap">
+          {data.map((item, idx) => (
+            <div className="w-60 border-2 m-5 p-3" key={idx}>
+              <Image
+                src={item.image[0].image}
+                width={500}
+                height={500}
+                className="rounded"
+                alt="Picture"
+              />
+              <div className="p-4 sm:p-6">
+                <p className="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+                  {item.name}
+                </p>
+                <p className="text-[#7C7C80] font-[15px] mt-6">{item.desc}</p>
+
+                <a
+                  target="_blank"
+                  href={item.publish}
+                  className="block mt-10 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform bg-[#FFC933] rounded-[14px] hover:bg-[#FFC933DD] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+                >
+                  Publish
+                </a>
+                <a
+                  target="_blank"
+                  href={item.github}
+                  className="block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+                >
+                  Repository
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
