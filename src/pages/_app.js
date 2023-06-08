@@ -12,6 +12,8 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider enableSystem={true} attribute="class">
       <Head>
         <title>Walid Nurudin</title>
+
+        <link rel="icon" href="/src/assets/favicon.ico" />
       </Head>
 
       <Main>
