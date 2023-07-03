@@ -5,13 +5,13 @@ const exp = [
     role: 'Frontend Developer',
     company: 'PT. Lyrid Prima Indonesia',
     date: 'Jan 2022 - Sekarang',
-    desc: 'Melakukan integrasi REST API, slicing UI Design ke web page dan memastikan berfungsi dengan baik.'
+    desc: ' Mengembangkan antarmuka pengguna (UI) yang menarik dan responsif menggunakan React JS. Bekerja sama dengan desainer UI/UX untuk mengimplementasikan desain ke dalam kode yang berfungsi. Mengembangkan aplikasi web menggunakan React JS. Bekerja dengan tim pengembang lainnya untuk membangun komponen dan fitur-fitur aplikasi yang kompleks. Mengembangkan dan memelihara situs web menggunakan React JS. Bekerja dengan tim pengembang lainnya untuk memastikan situs web berfungsi dengan baik dan memiliki performa yang baik. Mengembangkan dan memelihara kode frontend menggunakan React JS. Bekerja dengan tim pengembang lainnya untuk mengoptimalkan kinerja dan keamanan aplikasi. Bertanggung jawab untuk mengimplementasikan desain UI yang telah dirancang ke dalam kode menggunakan React JS. Menyesuaikan desain sesuai dengan kebutuhan dan memastikan tampilan yang konsisten di berbagai perangkat. Merancang dan mengembangkan arsitektur frontend menggunakan React JS. Memastikan kode yang dibangun memiliki struktur yang baik, mudah dipelihara, dan dapat diperluas di masa depan.'
   },
   {
     role: 'Fullstack Developer',
     company: 'Arkademy Tech Academy',
     date: 'Sep 2021 - jan 2022',
-    desc: 'Belajar React JS, Express JS & React Native. Dan membuat beberapa proyek.'
+    desc: 'Pelatihan intensif mengajarkan semua aspek pengembangan aplikasi web dan mobile, mulai dari front-end hingga back-end. Mempelajari bahasa pemrograman dan stack JavaScript, React.Js, Next.Js, React Native, Node.js, Express.js, dan MySql. Belajar tentang desain antarmuka pengguna, pengembangan aplikasi berbasis database, pengujian dan debugging, serta pengelolaan proyek dan kolaborasi dengan tim.'
   },
   {
     role: 'Frontend Developer',
