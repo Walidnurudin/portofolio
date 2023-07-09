@@ -65,32 +65,6 @@ const data = [
     ]
   },
 
-  // [2]
-  {
-    name: 'Tickitz (mobile)',
-    desc: 'Tickitz adalah aplikasi pemesanan tiket film berbasis online. Di aplikasi ini juga user dapat melihat jadwal film, memesan lebih dari satu tiket, dan dapat memilih kursi sesuai yang diinginkan. Tickitz dibangun menggunakan teknologi React native.',
-    publish: 'https://bit.ly/walid-tickitz-mobile',
-    github: 'https://github.com/Walidnurudin/TickitzMobile',
-    image: [
-      {
-        title: 'login page',
-        image: loginTickitzMobile
-      },
-      {
-        title: 'home page',
-        image: homeTickitzMobile
-      },
-      {
-        title: 'movie detail page',
-        image: movieDetailTickitzMobile
-      },
-      {
-        title: 'order page',
-        image: orderTickitzMobile
-      }
-    ]
-  },
-
   // [3]
   {
     name: 'Tickitz',
@@ -167,6 +141,32 @@ const data = [
         image: emailClover
       }
     ]
+  },
+
+  // [2]
+  {
+    name: 'Tickitz (mobile)',
+    desc: 'Tickitz adalah aplikasi pemesanan tiket film berbasis online. Di aplikasi ini juga user dapat melihat jadwal film, memesan lebih dari satu tiket, dan dapat memilih kursi sesuai yang diinginkan. Tickitz dibangun menggunakan teknologi React native.',
+    publish: 'https://bit.ly/walid-tickitz-mobile',
+    github: 'https://github.com/Walidnurudin/TickitzMobile',
+    image: [
+      {
+        title: 'login page',
+        image: loginTickitzMobile
+      },
+      {
+        title: 'home page',
+        image: homeTickitzMobile
+      },
+      {
+        title: 'movie detail page',
+        image: movieDetailTickitzMobile
+      },
+      {
+        title: 'order page',
+        image: orderTickitzMobile
+      }
+    ]
   }
 ];
 
@@ -174,7 +174,7 @@ const OpenSource = () => {
   return (
     <div>
       <div className="flex w-full">
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-row flex-wrap justify-center">
           {data.map((item, idx) => (
             <div className="w-60 border-2 m-5 p-3" key={idx}>
               <Image
@@ -188,7 +188,7 @@ const OpenSource = () => {
                 <p className="font-bold dark:text-gray-50 text-gray-700 text-[22px] leading-7 mb-1">
                   {item.name}
                 </p>
-                <p className="text-[#7C7C80] dark:text-green-300 font-[15px] mt-6">
+                <p className="text-[#7C7C80] dark:text-green-300 mt-6 font-light text-sm">
                   {item.desc}
                 </p>
 

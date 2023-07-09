@@ -44,7 +44,7 @@ const Experience = () => {
               {d.company} ({d.date})
             </p>
 
-            <p className="mt-2 p-2">{d.desc}</p>
+            <p className="mt-2 p-2 font-light text-sm">{d.desc}</p>
             {exp.length - 1 !== i && <div className="border-b-4 pb-3"></div>}
           </div>
         ))}
