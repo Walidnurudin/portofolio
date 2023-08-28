@@ -2,35 +2,71 @@ import React from 'react';
 
 const exp = [
   {
+    role: 'Fullstack Developer',
+    company: 'PT. Healstation Indonesia',
+    date: 'Jul 2023 - Sekarang',
+    desc: `- Developing and implementing user unterfaces using framework ReactJs/NextJs, CSS, SASS.
+    - Build and maintaining server-side applications using NodeJs.
+    - Writing clean, reusable and efficient code.
+    - Collaborating with designer, product managers, and other developers to understand project requirements and deliver high quality solitions.
+    - Testing and debugging to identify and fix any issues or bugs.
+    - Optimizing applications for maximum speed and scalability.
+    - Staying up to date with latest industry trends and technologies to continuously improve skills and knowledge.
+    - Troubleshooting and resolving technical issues that may arise during development or deployment.`
+  },
+  {
     role: 'Frontend Developer',
     company: 'PT. Lyrid Prima Indonesia',
-    date: 'Jan 2022 - Sekarang',
-    desc: ' Mengembangkan antarmuka pengguna (UI) yang menarik dan responsif menggunakan React JS. Bekerja sama dengan desainer UI/UX untuk mengimplementasikan desain ke dalam kode yang berfungsi. Mengembangkan aplikasi web menggunakan React JS. Bekerja dengan tim pengembang lainnya untuk membangun komponen dan fitur-fitur aplikasi yang kompleks. Mengembangkan dan memelihara situs web menggunakan React JS. Bekerja dengan tim pengembang lainnya untuk memastikan situs web berfungsi dengan baik dan memiliki performa yang baik. Mengembangkan dan memelihara kode frontend menggunakan React JS. Bekerja dengan tim pengembang lainnya untuk mengoptimalkan kinerja dan keamanan aplikasi. Bertanggung jawab untuk mengimplementasikan desain UI yang telah dirancang ke dalam kode menggunakan React JS. Menyesuaikan desain sesuai dengan kebutuhan dan memastikan tampilan yang konsisten di berbagai perangkat. Merancang dan mengembangkan arsitektur frontend menggunakan React JS. Memastikan kode yang dibangun memiliki struktur yang baik, mudah dipelihara, dan dapat diperluas di masa depan.'
+    date: 'Jan 2022 - Jul 2023',
+    desc: `- Developing and implementing user unterfaces using framework ReactJs/NextJs, CSS, SASS.
+     - Writing clean, reusable and efficient code.
+     - Collaborating with designer, product managers, and other developers to understand project requirements and deliver high quality solitions.
+     - Testing and debugging to identify and fix any issues or bugs.
+     - Optimizing applications for maximum speed and scalability.
+     - Staying up to date with latest industry trends and technologies to continuously improve skills and knowledge.
+     - Troubleshooting and resolving technical issues that may arise during development or deployment.`
   },
   {
     role: 'Fullstack Developer',
     company: 'Arkademy Tech Academy',
     date: 'Sep 2021 - jan 2022',
-    desc: 'Pelatihan intensif mengajarkan semua aspek pengembangan aplikasi web dan mobile, mulai dari front-end hingga back-end. Mempelajari bahasa pemrograman dan stack JavaScript, React.Js, Next.Js, React Native, Node.js, Express.js, dan MySql. Belajar tentang desain antarmuka pengguna, pengembangan aplikasi berbasis database, pengujian dan debugging, serta pengelolaan proyek dan kolaborasi dengan tim.'
+    desc: `- Developing and maintaining both the front-end and back-end of web applications.
+    - Collaborating with cross-functional teams to design, develop, and deploy software solutions.
+    - Writing clean, efficient, and reusable code.
+    - Troubleshooting and debugging issues in web applications.
+    - Implementing security and data protection measures.
+    - Optimizing web applications for maximum speed and scalability.
+    - Participating in code reviews and providing constructive feedback to improve code quality.
+    - Keeping up-to-date with the latest industry trends and technologies.
+    - Working closely with designers and other developers to ensure seamless integration of user interfaces and server-side logic.
+    - Collaborating with project managers to define project scope, goals, and deliverables.`
   },
   {
     role: 'Frontend Developer',
     company: 'Praxis Academy',
     date: 'Agu 2020 - Des 2020',
-    desc: 'Belajar membuat aplikasi web selama 3 bulan menggunakan Vue JS, dan membuat proyek kecil.'
+    desc: `- Learning the fundamentals of JavaScript and VueJs. This includes understanding the syntax, structure, and best practices.
+    - Learn how to create websites that adapt seamlessly across different devices and screen sizes.
+    - Learn how to use Git for code management and collaboration with other developers.
+    - Learn how to test and debug your code effectively to ensure high-quality and bug-free web applications.
+    - Work on real-life projects to apply your newly acquired skills and build a portfolio of frontend projects that showcase your abilities.`
   },
   {
     role: 'Frontend Developer',
     company: 'Pondok Programmer',
     date: 'Jan 2020 - Apr 2020',
-    desc: 'Belajar membuat aplikasi web selama 3 bulan menggunakan React JS, dan membuat proyek kecil.'
-  },
-  {
-    role: 'Security Guard',
-    company: 'PT. AGUNG RAHARDJA MANUNGGAL YUDHA',
-    date: 'Nov 2018 - Sep 2019',
-    desc: 'Melakukan pemeriksaan pada tamu / pemilik yang akan masuk ke area kerja, Menahan KTP/ SIM setiap tamu yang akan memasuki area kerja, Menjaga dan memelihara asset dan inventaris gedung. Bertanggung jawab untuk menjaga keamanan area kerja sesuai SOP yang telah ditentukan agar terciptanya area kerja yang aman dan kondusif.'
+    desc: `- Learning the fundamentals of JavaScript and VueJs. This includes understanding the syntax, structure, and best practices.
+    - Learn how to create websites that adapt seamlessly across different devices and screen sizes.
+    - Learn how to use Git for code management and collaboration with other developers.
+    - Learn how to test and debug your code effectively to ensure high-quality and bug-free web applications.
+    - Work on real-life projects to apply your newly acquired skills and build a portfolio of frontend projects that showcase your abilities.`
   }
+  // {
+  //   role: 'Security Guard',
+  //   company: 'PT. AGUNG RAHARDJA MANUNGGAL YUDHA',
+  //   date: 'Nov 2018 - Sep 2019',
+  //   desc: 'Melakukan pemeriksaan pada tamu / pemilik yang akan masuk ke area kerja, Menahan KTP/ SIM setiap tamu yang akan memasuki area kerja, Menjaga dan memelihara asset dan inventaris gedung. Bertanggung jawab untuk menjaga keamanan area kerja sesuai SOP yang telah ditentukan agar terciptanya area kerja yang aman dan kondusif.'
+  // }
 ];
 
 const Experience = () => {
@@ -44,7 +80,9 @@ const Experience = () => {
               {d.company} ({d.date})
             </p>
 
-            <p className="mt-2 p-2 font-light text-sm">{d.desc}</p>
+            <p className="mt-2 p-2 font-light text-sm whitespace-pre-line">
+              {d.desc}
+            </p>
             {exp.length - 1 !== i && <div className="border-b-4 pb-3"></div>}
           </div>
         ))}

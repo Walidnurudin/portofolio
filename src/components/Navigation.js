@@ -34,7 +34,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <ul className="flex my-10 space-x-2">
+      <ul className="flex flex-wrap my-10 space-x-2">
         {nav.map((d, i) =>
           d.route === '/resume' ? (
             <li key={i}>
@@ -42,7 +42,7 @@ const Navigation = () => {
                 target="_blank"
                 href="https://drive.google.com/file/d/1QzmwxMopNZXHts4Y6ZSOae0JSGuIz8mI/view?usp=sharing"
                 rel="noopener noreferrer"
-                className="text-sky-600 dark:text-white"
+                className="text-sky-600 dark:text-white underline"
               >
                 {d.label}
               </a>
@@ -54,7 +54,7 @@ const Navigation = () => {
                   className={`${
                     router.pathname === d.route
                       ? 'bg-sky-600 text-white dark:text-black dark:bg-white'
-                      : 'text-sky-600 dark:text-white'
+                      : 'text-sky-600 dark:text-white underline'
                   }`}
                   href={d.route}
                 >
