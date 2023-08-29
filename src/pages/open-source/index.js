@@ -38,7 +38,7 @@ const data = [
   //   [1]
   {
     name: 'Zwallet',
-    desc: 'Zwallet adalah aplikasi transaksi yang bisa kamu pakai untuk melakukan top up dan transfer ke sesama pengguna aplikasi zwallet. Zwallet dibangun menggunakan NextJS.',
+    desc: 'Zwallet is a transaction application that you can use to top up and transfer to fellow users of the zwallet application. Zwallet is built using NextJS.',
     publish: 'https://zwallet-x.vercel.app',
     github: 'https://github.com/Walidnurudin/zwallet',
     image: [
@@ -68,7 +68,7 @@ const data = [
   // [3]
   {
     name: 'Tickitz',
-    desc: 'Tickitz adalah aplikasi pemesanan tiket film berbasis online. Di aplikasi ini terdapat 2 role, yaitu role user dan admin. Pada role admin disini dapat mengelola film dan jadwal. Tickitz dibangun menggunakan teknologi ReactJS.',
+    desc: 'Tickitz is an online based movie ticket booking application. In this application there are 2 roles, namely user and admin roles. The admin role here can manage movies and schedules. Tickitz is built using ReactJS technology on the frontend side, react native on the mobile side, & expressJS on the backend side.',
     publish: 'https://tickitzapp.netlify.app/',
     github: 'https://github.com/Walidnurudin/tickitz-app',
     image: [
@@ -94,7 +94,7 @@ const data = [
   // [4]
   {
     name: 'Coffee Brings',
-    desc: 'Coffee Brings adalah aplikasi FnB berbasis online yang bertujuan untuk mempermudah siapa saja dalam pemesanan makanan atau minuman. Coffee Brings dibangun menggunakan NextJS.',
+    desc: 'Coffee Brings is an online-based F&B application that aims to make it easier for anyone to order food or drinks. Coffee Brings is built using NextJS on the frontend & expressJS on the backend. This is a team project, and I am as a fullstack',
     publish: 'https://frontend-coffebrings.vercel.app/',
     github: 'https://github.com/LepakBoy/frontend-coffebrings',
     image: [
@@ -146,7 +146,7 @@ const data = [
   // [2]
   {
     name: 'Tickitz (mobile)',
-    desc: 'Tickitz adalah aplikasi pemesanan tiket film berbasis online. Di aplikasi ini juga user dapat melihat jadwal film, memesan lebih dari satu tiket, dan dapat memilih kursi sesuai yang diinginkan. Tickitz dibangun menggunakan teknologi React native.',
+    desc: 'Tickitz is an online based movie ticket booking application. In this application there are 2 roles, namely user and admin roles. The admin role here can manage movies and schedules. Tickitz is built using ReactJS technology on the frontend side, react native on the mobile side, & expressJS on the backend side.',
     publish: 'https://bit.ly/walid-tickitz-mobile',
     github: 'https://github.com/Walidnurudin/TickitzMobile',
     image: [
