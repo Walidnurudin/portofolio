@@ -40,7 +40,7 @@ const Navigation = () => {
             <li key={i}>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1NwnGlVzfrU_Ulr_sN8oomwzt-y4b7-hY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1hB8-VAu1NMqNjB-96asTBD5gHqPrj-t9/view?usp=sharing"
                 rel="noopener noreferrer"
                 className="text-sky-600 dark:text-white underline"
               >
