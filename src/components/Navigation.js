@@ -12,8 +12,8 @@ const nav = [
     route: '/experience'
   },
   {
-    label: 'Open Source',
-    route: '/open-source'
+    label: 'Portofolio',
+    route: '/portofolio'
   },
   {
     label: 'Talks',
@@ -51,11 +51,10 @@ const Navigation = () => {
             <React.Fragment key={i}>
               <li>
                 <Link
-                  className={`${
-                    router.pathname === d.route
+                  className={`${router.pathname === d.route
                       ? 'bg-sky-600 text-white dark:text-black dark:bg-white'
                       : 'text-sky-600 dark:text-white underline'
-                  }`}
+                    }`}
                   href={d.route}
                 >
                   {d.label}
